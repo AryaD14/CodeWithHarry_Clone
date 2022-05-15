@@ -1,0 +1,203 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.head-nav {
+  border-bottom: 1px solid #edeef1;
+  background-color: white;
+  height: 5.2rem;
+  width: 100%;
+  position: sticky;
+  top: 0px;
+}
+
+.nav-logo {
+  padding: 1.4rem;
+}
+
+.nav-logo a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #5e26bf;
+  padding: 1rem;
+  font-weight: bolder;
+}
+
+.navbar {
+  right: 2rem;
+  top: 1.3rem;
+  position: absolute;
+}
+
+.navbar ul {
+  margin-right: 13px;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar li a {
+  text-decoration: none;
+  padding: 0.5rem;
+  color: black;
+}
+
+.buttons-login .btn {
+  background-color: #5e26bf;
+  color: white;
+  border: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  margin: 2px 2px;
+  height: 2.3rem;
+  width: 4rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.buttons-login .btn:hover {
+  cursor: pointer;
+  background-color: #491d95;
+}
+
+.burger {
+    border: 1px solid gray;
+    border-radius: 4px;
+    position: absolute;
+    top: -3rem;
+    right: -21.5rem;
+    display: none;
+    cursor: pointer;
+}
+
+.line {
+    width: 20px;
+    height: 2px;
+    margin: 5px 5px;
+    background-color: black;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #f5f3ff;
+  height: 5rem;
+}
+
+.footer img {
+  height: 50px;
+  margin-left: 2rem;
+}
+
+.footer .brand-name {
+  margin-left: 0.7rem;
+  font-size: 20px;
+}
+
+.footer .vl {
+  border: 1px solid #d6d8dd;
+  height: 45px;
+  margin-left: 15px;
+}
+
+.footer .copyright-text {
+  margin-left: 13px;
+  color: gray;
+  font-size: 15px;
+}
+
+.social-links {
+  position: absolute;
+  margin-right: 5px;
+  right: 2rem;
+}
+
+.social-links i {
+  font-size: 21px;
+  color: grey;
+}
+
+.social-links a {
+  margin: 5px;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .head-nav {
+    justify-content: center;
+    height: 285px;
+    background-color: white;
+  }
+
+  .navbar {
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 355px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar ul li{
+    list-style: none;
+    padding: 8px;
+    font-size: 19px;
+  }
+
+  .buttons-login{
+      margin-top: 5px;
+  }
+
+  .burger{
+      display: block;
+  }
+
+  .h-nav{
+    height: 15px;
+    background-color: white;
+  }
+
+  .v-class{
+    opacity: 0;
+  }
+}
+
+/* Pre-Defined Classes */
+.d-flex {
+  display: flex;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.center {
+  text-align: center;
+}
